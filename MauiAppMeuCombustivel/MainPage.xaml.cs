@@ -11,12 +11,12 @@
         {
             try
             {
-                double etanol = Convert.ToDouble(txt_etanol.Text);
-                double gasolina = Convert.ToDouble(txt_gasolina.Text);
+                double etanol = Convert.ToDouble(txtEtanol.Text);
+                double gasolina = Convert.ToDouble(txtGasolina.Text);
 
                 string mensagem = "";
 
-                if (etanol >= (gasolina * 0.7))
+                if (etanol <= (gasolina * 0.7))
                 {
                     mensagem = "O Etanol está compensando!";
                 }
